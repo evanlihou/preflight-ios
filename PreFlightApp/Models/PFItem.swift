@@ -9,10 +9,12 @@ import Foundation
 import SwiftData
 
 @Model
-final class Item {
+final class PFItem {
     var timestamp: Date
+    //@Relationship var list?: PFList
     
-    init(timestamp: Date) {
+    init(timestamp: Date) {//, list: PFList) {
         self.timestamp = timestamp
+        //self.list = list
     }
 }

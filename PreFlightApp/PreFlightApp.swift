@@ -9,10 +9,11 @@ import SwiftUI
 import SwiftData
 
 @main
-struct PreFlightAppApp: App {
+struct PreFlightApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            PFItem.self,
+            PFList.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
